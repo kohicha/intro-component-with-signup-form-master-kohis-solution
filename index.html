@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="min-h-screen grid place-content-center bg-[url(images/bg-intro-desktop.png)] bg-Red bg-cover text-white">
+    <div class="grid grid-flow-row sm:grid-flow-col max-w-7xl">
+      <div class="p-12 tracking-wider flex flex-col gap-8 justify-center text-center sm:text-left">
+        <p class="font-PoppinsBold text-5xl">
+          Learn to code by watching others
+        </p>
+        <p class="font-PoppinsRegular">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. 
+        </p>        
+      </div>
+      <div class="flex flex-col gap-6 md:w-[36rem] md:h-[36rem] justify-center">
+        <div class="w-full text-center p-5 bg-Blue rounded-lg shadow-boxShadowRed">
+          <p class="font-PoppinsSemiBold">
+            Try it free 7 days <span class="font-PoppinsRegular">then $20/mo. thereafter </span>
+          </p>
+        </div>
+        <div class="bg-white text-black flex flex-col rounded-xl p-12 md:h-[36rem] gap-4 justify-between shadow-boxShadowRed">
+          <form name="signup" class="flex flex-col justify-between gap-4 font-PoppinsMedium text-sm text-GrayishBlue">
+            <div class="">
+              <input class="field-input bg-[url(images/icon-error.svg)] bg-none bg-no-repeat bg-[26rem_,4px] w-full focus:border-Red border rounded-lg p-4" placeholder="First Name" type="text" name="fname" id="fname">
+              <p class="field-empty hidden font-PoppinsItalic text-Red text-right text-xs pt-2">First Name cannot be empty</p>
+            </div>
+            <div class="">
+              <input class="field-input bg-[url(images/icon-error.svg)] bg-none bg-no-repeat bg-[26rem_,4px] w-full focus:border-Red border rounded-lg p-4" placeholder="Last Name" type="text" name="lname" id="lname">
+              <p class="field-empty hidden font-PoppinsItalic text-Red text-right text-xs pt-2">Last Name cannot be empty</p>
+            </div>
+            <div class="">
+              <input class="field-input bg-[url(images/icon-error.svg)] bg-none bg-no-repeat bg-[26rem_,4px] w-full focus:border-Red border rounded-lg p-4" placeholder="Email Address" type="email" name="email" id="email">
+              <p class="field-empty hidden font-PoppinsItalic text-Red text-right text-xs pt-2">Email cannot be empty</p>
+            </div>
+            <div class="">
+              <input class="field-input bg-[url(images/icon-error.svg)] bg-none bg-no-repeat bg-[26rem_,4px] w-full focus:border-Red border rounded-lg p-4" placeholder="Password" type="password" name="password" id="password">
+              <p class="field-empty hidden font-PoppinsItalic text-Red text-right text-xs pt-2">Password cannot be empty</p>
+            </div>
+            <div>
+              <input type="submit" value="Claim your free trial" class="bg-Green p-4 rounded-lg shadow-boxShadowGreen font-PoppinsMedium uppercase text-white tracking-wide w-full cursor-pointer">
+              </input>
+            </div>
+            
+          </form>
+          
+          <p class="text-xs text-center font-PoppinsRegular text-GrayishBlue">
+            By clicking the button, you are agreeing to our <span class="text-Red">Terms and Services</span>
+          </p>         
+        </div>
+      </div>
+    
+      
+    </div>
+    
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Kohi</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
